@@ -23,6 +23,11 @@ describe('my app', function() {
         toMatch(/partial for view 1/);
     });
 
+      it('should have a heart symbol', function() {
+          expect(element.all(by.css('[ng-view] p')).first().getText()).
+              toMatch(/♥/);
+      });
+
   });
 
 
