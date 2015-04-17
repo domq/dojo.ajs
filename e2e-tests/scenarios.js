@@ -23,11 +23,14 @@ describe('my app', function() {
         toMatch(/partial for view 1/);
     });
 
-      it('should have a heart symbol', function() {
-          expect(element.all(by.css('[ng-view] p')).first().getText()).
-              toMatch(/♥/);
-      });
+    it('should have the playing card symbols', function() {
+      expect(element.all(by.css('[ng-view] span')).first().getText()).
+          toMatch(/♠♣♥♦/);
+    });
 
+    it('should have the diamond symbol red', function () {
+      false;  // TODO
+    });
   });
 
 
