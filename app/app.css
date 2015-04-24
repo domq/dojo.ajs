@@ -32,3 +32,14 @@
 .red {
   color: red;
 }
+
+
+.cards {
+  background-image: url('/app/images/classic-playing-cards.png');
+  background-repeat: no-repeat;
+  height: 98px;
+  width: 73px;
+  display: inline-block;
+}
+
+

@@ -11,4 +11,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', [function() {
 
+      $(".cards").each(function (index,e) {
+        console.log(e);
+        e.css("background-position", "-73px -98px");
+      });
+
 }]);
+
